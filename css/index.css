@@ -1,0 +1,163 @@
+* { 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	position: absolute;
+}
+
+header ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+header li {
+	float: right;
+}
+
+header li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+header li a:hover {
+	text-decoration-line: underline;
+}
+
+#home {
+	background-image: url(../img/header-bg-1024.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 750px;
+	color: white;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.page_wrap {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 1600px;
+	padding: 20px;
+}
+.page_wrap h1 {
+	text-align: center;
+	padding: 7rem;
+	font-size: 5em;
+	letter-spacing: 4px;
+}
+.page_wrap h2 {
+	text-align: center;
+	padding: 25px;
+	font-size: 3em;
+}
+.page_wrap h3 {
+	text-align: center;
+	padding: 25px;
+	font-size: 3em;
+}
+.page_wrap p {
+	text-align: center;
+	font-size: 2em;
+	padding: 25px;
+}
+
+.button {
+	text-align: center;
+	text-decoration: none;
+	font-family: "brandon-grotesque", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	border: 2px solid #f5e4e49e;
+	display: block;
+	padding: 2rem;
+	width: 40%;;
+	margin: auto;
+	border-radius: 5px;
+	color: white;
+
+}
+
+.button:hover {
+	background-color: white;
+	color: red;
+}
+
+#portfolio-desc {
+	background-color: grey;
+	margin: 10px;
+	padding: 40px;
+}
+
+.on-behance {
+	color: red;
+	border: 2px solid red;
+}
+
+.online-soon {
+	color: red;
+	border: 2px solid grey;
+}
+
+.butnsz {
+	display: flex;
+	flex-direction: row;
+}
+
+.img-portfolio {
+	width: 100%
+}
+
+figure {
+	width: 80%;
+	margin: auto;
+}
+
+#about {
+	background-image: url(../img/stream-1024.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#contact {
+	background-color: #e91e63;
+}
+.social-links-container {
+
+}
+.social-links-container ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.social-links-container li {
+    padding: 3px;
+    text-decoration-line: underline;
+  }
+
+.social-links-container li a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+ footer {
+background-color: black;
+color: white;
+  }
