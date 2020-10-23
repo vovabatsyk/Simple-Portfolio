@@ -1,0 +1,13 @@
+const { BaseLayout } = require('../components/layouts/BaseLayout')
+
+class About extends React.Component {
+  render() {
+    return (
+      <BaseLayout>
+        <h1>About</h1>
+      </BaseLayout>
+    )
+  }
+}
+
+export default About
