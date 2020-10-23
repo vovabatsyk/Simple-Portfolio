@@ -18,12 +18,16 @@ class Home extends React.Component {
                   <div className={`flipper`}>
                     <div className='back'>
                       <div className='hero-section-content'>
-                        <h2> Full Stack Web Developer </h2>
-                        <div className='hero-section-content-intro'>
+                        <h2>  <Typed
+                      strings={['Have a look at my portfolio.']}
+                      typeSpeed={70}
+                    /> </h2>
+                    {/* Full Stack Web Developer */}
+                        {/* <div className='hero-section-content-intro'>
                           Have a look at my portfolio.
-                        </div>
+                        </div> */}
                       </div>
-                      <img className='image' src='/images/section-1.png' />
+                      <img className='image' src='/images/personal.jpg' />
                       <div className='shadow-custom'>
                         <div className='shadow-inner'> </div>
                       </div>
@@ -43,11 +47,12 @@ class Home extends React.Component {
                   <h1>
                     <Typed
                       loop
-                      strings={["Let's take a look on my work."]}
+                      strings={['JavaScript', 'Node.JS', '.NET', 'C++']}
                       typeSpeed={70}
-backDelay={5000}
-/>
+                      backDelay={2000}
+                    />
                   </h1>
+                  <h2>Let's take a look on my work.</h2>
                 </div>
               </Col>
             </Row>

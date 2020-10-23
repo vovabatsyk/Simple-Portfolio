@@ -1,5 +1,5 @@
 // import React from 'react'
-// import Link from 'next/link'
+import Link from 'next/link'
 
 // class Header extends React.Component {
 //   render() {
@@ -26,7 +26,7 @@
 // }
 
 // export default Header
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import {
   Collapse,
   Navbar,
@@ -35,84 +35,37 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
-} from 'reactstrap';
+} from 'reactstrap'
 
 const Header = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
-  const toggle = () => setIsOpen(!isOpen);
+  const toggle = () => setIsOpen(!isOpen)
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+      <Navbar className='port-navbar port-default absolute' color='transparent' dark expand='md'>
+        <Link href='/'><a className='navbar-brand port-navbar-brand'>Volodymyr Batsyk</a></Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+          <Nav className='ml-auto' navbar>
+            <NavItem className='port-navbar-item'>
+              <Link href='/about'><a className='nav-link port-navbar-link'>About</a></Link>
             </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+            <NavItem className='port-navbar-item'>
+              <Link href='/portfolios'><a className='nav-link port-navbar-link'>Portfolios</a></Link>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem className='port-navbar-item'>
+              <Link href='/blogs'><a className='nav-link port-navbar-link'>Blogs</a></Link>
+            </NavItem>
+            <NavItem className='port-navbar-item'>
+              <Link href='/cv'><a className='nav-link port-navbar-link'>CV</a></Link>
+            </NavItem>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
     </div>
-  );
+  )
 }
 
-export default Header;
-
-// import React, { useState } from 'react';
-// import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-
-// const Header = (props) => {
-//   const [collapsed, setCollapsed] = useState(true);
-
-//   const toggleNavbar = () => setCollapsed(!collapsed);
-
-//   return (
-//     <div>
-//       <Navbar color="faded" light>
-//         <NavbarBrand href="/" className="mr-auto">reactstrap</NavbarBrand>
-//         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
-//         <Collapse isOpen={!collapsed} navbar>
-//           <Nav navbar>
-//             <NavItem>
-//               <NavLink href="/components/">Components</NavLink>
-//             </NavItem>
-//             <NavItem>
-//               <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-//             </NavItem>
-//           </Nav>
-//         </Collapse>
-//       </Navbar>
-//     </div>
-//   );
-// }
-
-// export default Header;
+export default Header

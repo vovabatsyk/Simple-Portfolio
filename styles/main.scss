@@ -1,6 +1,16 @@
 @import './index';
+@import './header';
 
 html, body {
     height: 100%;
     width: 100%;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.base-page {
+    padding-top: 120px;
+    color: white;
 }
